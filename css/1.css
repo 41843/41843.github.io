@@ -1,0 +1,21 @@
+.out {
+    height: 2250px;
+    width: 1170px;
+    background-color: rgb(247, 248, 249);
+    margin: 0 auto;
+}
+
+.outout {
+    position: absolute;
+    z-index: 1;
+    width: fit-content;
+    height: fit-content;
+}
+
+.date {
+    position: absolute;
+    z-index: 2;
+    font-size: 60px;
+    margin-top: 1470px;
+    margin-left: 270px;
+}
