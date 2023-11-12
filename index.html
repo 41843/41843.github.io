@@ -6,12 +6,16 @@
     <link href="css/1.css" rel="stylesheet">
     <title>经贸码</title>
     <script>
-  setInterval(function() {
-    var colors = ['red', 'green', 'black']; // 可选的色彩列表
-    var index = Math.floor(Math.random() * colors.length); // 随机选择一种颜色
-    var color = colors[index]; // 获取选中的颜色
-    document.getElementById('text').style.color = color; // 修改文本颜色
-  }, 1000); // 每1秒钟执行一次
+  const colorText = document.getElementById('text');
+        let colors = ['red', 'green', 'black'];
+        let currentColorIndex = 0;
+
+        function changeColor() {
+            colorText.style.color = colors[currentColorIndex];
+            currentColorIndex = (currentColorIndex + 1) % colors.length;
+        }
+
+        setInterval(changeColor, 1000);
 </script>
 
 </head>
