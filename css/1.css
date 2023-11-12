@@ -13,13 +13,14 @@
 }
 
 .date {
-   position: absolute;
+     position: absolute;
     z-index: 2;
     font-size: 120px;
     color: red;
     margin-left: 900px;
-    margin-top: 900px;
+    margin-top: 520px;
     text-align: center;
+    height: 2000px;
     writing-mode: vertical-rl;
     border: 0px solid black;
 }
