@@ -5,12 +5,21 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link href="css/1.css" rel="stylesheet">
     <title>经贸码</title>
+    <script>
+  setInterval(function() {
+    var colors = ['red', 'green', 'black']; // 可选的色彩列表
+    var index = Math.floor(Math.random() * colors.length); // 随机选择一种颜色
+    var color = colors[index]; // 获取选中的颜色
+    document.getElementById('text').style.color = color; // 修改文本颜色
+  }, 1000); // 每1秒钟执行一次
+</script>
+
 </head>
 
 <body>
     <div class="out">
         <div class="outout"> <img src="images/4.PNG"></div>
-         <div style="float: right;"><strong class="date"><div id="dateTime"></div></strong></div>
+         <div style="float: right;"><strong class="date" id="text"><div id="dateTime"></div></strong></div>
     </div>
     <script>
         Date.prototype.format = function(fmt) {
