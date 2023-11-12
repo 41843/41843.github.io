@@ -13,10 +13,13 @@
 }
 
 .date {
-    position: absolute;
+   position: absolute;
     z-index: 2;
-    font-size: 60px;
-    margin-top: 1470px;
-    width: 1170px;
+    font-size: 120px;
+    color: red;
+    margin-left: 900px;
+    margin-top: 900px;
     text-align: center;
+    writing-mode: vertical-rl;
+    border: 0px solid black;
 }
