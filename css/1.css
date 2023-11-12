@@ -12,7 +12,7 @@
     height: fit-content;
 }
 
-#text {
+.date {
     transition:color ls;
     position: absolute;
     z-index: 2;
