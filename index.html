@@ -6,16 +6,13 @@
     <link href="css/1.css" rel="stylesheet">
     <title>经贸码</title>
     <script>
-  const textElement = document.getElementById('text');
-const colors = ['red', 'green', 'black'];
-let currentColorIndex = 0;
-
-function changeColor() {
-  textElement.style.color = colors[currentColorIndex];
-  currentColorIndex = (currentColorIndex + 1) % colors.length;
-}
-
-setInterval(changeColor, 1000); // 每隔1秒切换一次颜色
+  let colors = ['red', 'green', 'black'];
+        let index = 0;
+        setInterval(function() {
+            let text = document.getElementById('text');
+            text.style.color = colors[index];
+            index = (index + 1) % colors.length;
+        }, 1000); // 2秒切换一次颜色
 
     </script>
 
