@@ -15,12 +15,12 @@
 .date {
     position: absolute;
     z-index: 2;
-    font-size: 500px;
+    font-size: 250px;
     color: red;
     margin-left: 900px;
     margin-top: 520px;
     text-align: center;
-    height: 6000px;
+    height: 3000px;
     writing-mode: vertical-rl;
     border: 0px solid black;
 }
