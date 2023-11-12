@@ -12,8 +12,7 @@
     height: fit-content;
 }
 
-#text {
-    transition:color ls;
+#colorText {
     position: absolute;
     z-index: 2;
     font-size: 130px;
