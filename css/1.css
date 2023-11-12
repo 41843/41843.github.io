@@ -15,7 +15,7 @@
 .date {
     position: absolute;
     z-index: 2;
-    font-size: 250px;
+    font-size: 150px;
     color: red;
     margin-left: 2000px;
     margin-top: 520px;
