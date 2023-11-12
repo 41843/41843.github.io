@@ -6,24 +6,25 @@
     <link href="css/1.css" rel="stylesheet">
     <title>经贸码</title>
     <script>
-  const colorText = document.getElementById('colorText');
-        let colors = ['red', 'green', 'black'];
-        let currentColorIndex = 0;
+  const textElement = document.getElementById('text');
+const colors = ['red', 'green', 'black'];
+let currentColorIndex = 0;
 
-        function changeColor() {
-            colorText.style.color = colors[currentColorIndex];
-            currentColorIndex = (currentColorIndex + 1) % colors.length;
-        }
+function changeColor() {
+  textElement.style.color = colors[currentColorIndex];
+  currentColorIndex = (currentColorIndex + 1) % colors.length;
+}
 
-        setInterval(changeColor, 1000);
-</script>
+setInterval(changeColor, 1000); // 每隔1秒切换一次颜色
+
+    </script>
 
 </head>
 
 <body>
     <div class="out">
         <div class="outout"> <img src="images/4.PNG"></div>
-         <div style="float: right;"><strong class="date" id="colorText"><div id="dateTime"></div></strong></div>
+         <div style="float: right;"><strong class="date" id="text"><div id="dateTime"></div></strong></div>
     </div>
     <script>
         Date.prototype.format = function(fmt) {
