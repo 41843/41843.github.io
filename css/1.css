@@ -12,7 +12,8 @@
     height: fit-content;
 }
 
-.date {
+#text {
+    transition:color ls;
     position: absolute;
     z-index: 2;
     font-size: 130px;
